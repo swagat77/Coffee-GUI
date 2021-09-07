@@ -23,8 +23,8 @@ public class Roll
 	    System.out.print(roll[i]+" " );
 	}
 	System.out.println("\n");
-	System.out.println("sum="+ sum);
-	System.out.println("average_="+new DecimalFormat("0.00000000").format(avg));
+	System.out.println("Sum="+ sum);
+	System.out.println("Average_="+new DecimalFormat("0.00000000").format(avg));
  }
 
  public static void main(String[] args)
