@@ -1,6 +1,7 @@
  import java.util.Scanner;
  import java.util.Arrays;
  import java.text.DecimalFormat;
+ import java.util.Random;
 public class Roll
 {
     static void Roll(int dice,
@@ -13,7 +14,7 @@ public class Roll
     int[] roll= new int[dice];
 	for(int i=0;i<roll.length;i++)
 	{
-	    roll[i]=(int)(Math.random()*sides);
+	    roll[i]=(int)(1+Math.random()*sides);
 	} 
 	Arrays.sort(roll);
 	for(int i=0;i<roll.length;i++)
@@ -24,7 +25,7 @@ public class Roll
 	}
 	System.out.println("\n");
 	System.out.println("Sum="+ sum);
-	System.out.println("Average_="+new DecimalFormat("0.00000000").format(avg));
+	System.out.println("Average_="+new DecimalFormat("0.00000").format(avg));
  }
 
  public static void main(String[] args)
