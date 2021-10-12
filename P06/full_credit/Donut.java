@@ -25,5 +25,5 @@ return shot;
 public String toString(){
 return cost;
 return darkness; 
-}
+  }
 }
