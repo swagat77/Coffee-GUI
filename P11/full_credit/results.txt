@@ -1,0 +1,63 @@
+Full Credit===========
+Number of cores available to my test environment (in bash use ``nproc`` command):1Primes range for my machine (between 20 and 30 second runtime without threads): 0-10000.
+Without threads:
+real	0.206 secondsuser	0.179 secondssys	0.016 seconds
+
+With 2 threads:
+real	0.209 secondsuser	0.179 secondssys	0.020 seconds
+
+With 3 threads:
+real	0.200 secondsuser	0.178 secondssys	0.016 seconds
+
+With 4 threads:
+real	0.204 secondsuser	0.183 secondssys	0.013 seconds
+
+With 5 threads:
+real	0.218 seconds user	0.19 seconds sys	0.020 seconds
+
+With 6 threads:
+real	0.210 secondsuser	0.195 secondssys	0.004 seconds
+
+With 7 threads:
+real	0.219 secondsuser	0.168 secondssys	0.040 seconds
+
+With 8 threads:
+real	0.210 secondsuser	0.170 secondssys	0.032 seconds
+
+With 16 threads:
+real	0.211 seconds user	0.191 secondssys	0.012 seconds
+
+With 32 threads:
+real	0.209 secondsuser	0.171 secondssys	0.031 seconds
+
+With 64 threads:
+real	0.216 secondsuser	0.189 secondssys	0.016 seconds
+
+QUESTION: After threading is added to threads.cpp, is the order of prime numbers found in primes_threads.txt the same or different than in primes.txt?  Why?The order of prime number is different.
+
+
+
+QUESTION: Does adding more threads continue to speed up the program? Do more threads ever slow down the program slightly?  Why or why not?No adding more threads does not continue to speed up the program.yes adding more threads slow down a program slightly because there is a problrm of CPU bound,memory resources.
+
+
+
+QUESTION: Does adding more threads increase the "system load", or is it constant regardless of the number of threads?  Why?
+It is constant regardless of the number of threads because  program will only use one processor at a time.
+
+
+Bonus=====
+After "load balancing" your code as discussed in the PDF, rerun the test with the same number of threads as your test environment has cores. For example, on a 4-core machine, run your code with 4 threads and record the time below.
+Number of cores: 1
+Load Balanced-------------
+real	user	sys	
+NOT Load Balanced-----------------
+Copy the time for this number of cores from the Full Credit section:
+real	user	sys	
+QUESTION: What difference does a load balanced thread pool make in execution time?
+
+
+
+Extreme Bonus=============
+List the optimizations you applied to reduce the time needed to identify prime numbers.
+* Optimization 1: * Optimization 2: * Optimization 3: 
+Add additional bullet points as needed.
